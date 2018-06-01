@@ -1,0 +1,9 @@
+E:\PROJECT\TaskManager\TaskManager\bin\TaskManager.dll.config
+E:\PROJECT\TaskManager\TaskManager\bin\TaskManager.dll
+E:\PROJECT\TaskManager\TaskManager\bin\TaskManager.pdb
+E:\PROJECT\TaskManager\TaskManager\bin\AjaxControlToolkit.dll
+E:\PROJECT\TaskManager\TaskManager\bin\Common.dll
+E:\PROJECT\TaskManager\TaskManager\bin\itextsharp.dll
+E:\PROJECT\TaskManager\TaskManager\bin\AjaxControlToolkit.pdb
+E:\PROJECT\TaskManager\TaskManager\obj\Release\TaskManager.dll
+E:\PROJECT\TaskManager\TaskManager\obj\Release\TaskManager.pdb
