@@ -57,7 +57,7 @@
                     
                     <div class="col-sm-6 col-md-3">
                         <a href="MyTask.aspx">
-                            <div class="mini-charts-item bgm-gray">
+                            <div class="mini-charts-item bgm-orange">
                                 <div class="clearfix">
                                     <div class="chart stats-bar"></div>
                                     <div class="count">
@@ -73,7 +73,7 @@
                     
                     <div class="col-sm-6 col-md-3">
                         <a href="MyTask.aspx">
-                            <div class="mini-charts-item bg-success">
+                            <div class="mini-charts-item bgm-purple">
                                 <div class="clearfix">
                                     <div class="chart stats-bar"></div>
                                     <div class="count">
@@ -89,7 +89,7 @@
                     
                     <div class="col-sm-6 col-md-3">
                         <a href="MyTask.aspx">
-                            <div class="mini-charts-item bgm-lightgreen">
+                            <div class="mini-charts-item bgm-amber">
                                 <div class="clearfix">
                                     <div class="chart stats-bar"></div>
                                     <div class="count">
@@ -133,7 +133,7 @@
                     </div>
                     <div class="col-sm-6 col-md-3">
                         <a href="#">
-                            <div class="mini-charts-item bgm-brown">
+                            <div class="mini-charts-item bgm-lightblue">
                                 <div class="clearfix">
                                     <div class="chart stats-bar-2"></div>
                                     <div class="count">

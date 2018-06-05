@@ -204,7 +204,7 @@
                                 <option value="0" disabled="disabled">---------------------------------</option>
                                 <option value="In Progress">In Progress Task</option>
                                 <option value="Not Started">Not Started Task</option>
-                                <option value="yesterdaycomletetask">Yesterday Complete Task</option>
+                                <option value="yesterdaycomletetask">Yesterday Completed Task</option>
                             </select>
                         </div>
                         <div id="filterbydate">
@@ -258,14 +258,27 @@
 
                                     
                                     <th>Assign to</th>
-                                    <th>Subject</th>
+                                    <th>Client Name</th>
+                                    <th>Contact Person</th>
+                                    <th>Client Number</th>
+                                    <th>Email ID</th>
+                                    <th>Client Group</th>
+                                    <th>Nature Of Work</th>                                    
+                                    <th>Work Recieved On</th>
+                                    <th>Due Date</th>
+                                    <th>Closed Date</th>
+                                    <th>Status</th>
+                                    <th>Remark</th>
+                                    <th>Priority</th>
+
+                                    <%--<th>Subject</th>
                                     <th>Created Time</th>
                                     <th>Due Date</th>
                                     <th>Closed Date</th>
                                     <th>Status</th>
                                     <th>Description</th>
                                     <th>Priority</th>                   
-                                    <th>Repeat Type</th>
+                                    <th>Repeat Type</th>--%>
                                     <th>Task Owner</th>                                   
                                     
                                      <th>Action</th>
@@ -287,14 +300,20 @@
                                     </td>
                                     
                                     <td ng-bind="x.ASSIGNED_EMPLOYEE_NAME"></td>
+                                                                        
                                     <td ng-bind="x.SUBJECT"></td>
-                                    <td ng-bind="x.CREATED"></td>
+                                    <td ng-bind="x.CONTACT_PERSON"></td>
+                                    <td ng-bind="x.CONTACT_NUMBER"></td>                        
+                                    <td ng-bind="x.CONTACT_EMAIL_ID"></td>
+                                    <td ng-bind="x.CLIENT_GROUP"></td>                                    
+                                    <td ng-bind="x.NATURE_OF_WORK"></td>                                                                        
+                                    <td ng-bind="x.START_DATE"></td>
                                     <td ng-bind="x.DUE_DATE"></td>
                                     <td ng-bind="x.CLOSED_DATE"></td>
                                     <td ng-bind="x.STATUS"></td>
                                     <td ng-bind="x.DESCRIPTION"></td>
                                     <td ng-bind="x.PRIORITY"></td>
-                                    <td ng-bind="x.REPEAT_TYPE"></td>
+                                    
                                     <td ng-bind="x.TASK_OWNER_NAME"></td>
                                     <td>
                                         <button data-toggle="modal" ng-click="ViewTaskDetail(x)" href="#modalDefault" type="button" title="View Task"

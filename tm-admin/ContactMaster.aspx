@@ -45,8 +45,8 @@
                                 </div>
 
                                 <br />
-                                <asp:Button runat="server" ID="btnsubmit" ValidationGroup="add" Text="Submit" CssClass="btn-success btn-sm m-t-10" OnClick="lbSubmit_Click" />
-                                <asp:Button runat="server" ID="btnupdate" ValidationGroup="add" Visible="false" Text="Update" OnClick="lbUpdate_Click" CssClass="btn-success btn-sm m-t-10" />                               
+                                <asp:Button runat="server" ID="btnsubmit" ValidationGroup="add" Text="Submit" CssClass="custom-submit-btn btn-primary btn-sm m-t-10" OnClick="lbSubmit_Click" />
+                                <asp:Button runat="server" ID="btnupdate" ValidationGroup="add" Visible="false" Text="Update" OnClick="lbUpdate_Click" CssClass="custom-submit-btn btn-primary btn-sm m-t-10" />                               
                             </div>
                         </div>
 

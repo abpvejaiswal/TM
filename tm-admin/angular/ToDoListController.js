@@ -68,9 +68,9 @@ app.controller('ToDoListController', function ($scope, $http, $window, ngProgres
 
         //START_DATE: $("#START_DATE").val(),
         //DUE_DATE: $("#DUE_DATE").val(),
-
+        debugger;
         var emp_id = $(".ddlEmployee").val();
-        if (ADD_TASK.SUBJECT == '' || emp_id == '0' || start_date == '' || due_date == '' || ADD_TASK.TARGETED_DAYS=='') {
+        if (ADD_TASK.SUBJECT == '' || emp_id == '0' || start_date == '' || due_date == '' || ADD_TASK.TARGETED_DAYS == '' || ADD_TASK.CONTACT_PERSON == '0' || ADD_TASK.CONTACT_NUMBER == '' || ADD_TASK.CONTACT_EMAIL_ID == '' ) {
             alert('Please Fill compulsory fields ! ');
             return;
         }

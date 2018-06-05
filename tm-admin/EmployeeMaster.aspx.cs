@@ -53,6 +53,7 @@ namespace TaskManager.tm_admin
                             RES_ADDRESS.Text = dt.Rows[0]["ADDRESS"].ToString();
                             R_LANDMARK.Text = dt.Rows[0]["LANDMARK"].ToString();
                             R_AREA.Text = dt.Rows[0]["AREA"].ToString();
+                            txtPinCode.Text = dt.Rows[0]["PINCODE"].ToString();
                             chkStatus.Checked = Convert.ToBoolean(dt.Rows[0]["STATUS"].ToString());
                             //BLOOD_GROUP.SelectedValue = dt.Rows[0]["BLOOD_GROUP"].ToString();
                             //ddlZone.SelectedValue = dt.Rows[0]["ZONE"].ToString();
@@ -145,7 +146,7 @@ namespace TaskManager.tm_admin
             try
             {
                 string empId = Request.QueryString["ID"].ToString();
-                D.ExecuteQuery("UPDATE employee_master SET STATUS='" + Convert.ToBoolean(chkStatus.Checked) + "',  EMAIL='" + EMAIL.Text + "',FIRST_NAME='" + FIRST_NAME.Text + "',LAST_NAME='" + LAST_NAME.Text + "',DOB='" + DOB.Text + "',MOBILE_NUMBER='" + MOBILE_NUMBER.Text + "',ADDRESS='" + RES_ADDRESS.Text + "',LANDMARK='" + R_LANDMARK.Text + "',AREA='" + R_AREA.Text + "' where id='" + empId + "'");
+                D.ExecuteQuery("UPDATE employee_master SET PINCODE='" + txtPinCode.Text + "', STATUS='" + Convert.ToBoolean(chkStatus.Checked) + "',  EMAIL='" + EMAIL.Text + "',FIRST_NAME='" + FIRST_NAME.Text + "',LAST_NAME='" + LAST_NAME.Text + "',DOB='" + DOB.Text + "',MOBILE_NUMBER='" + MOBILE_NUMBER.Text + "',ADDRESS='" + RES_ADDRESS.Text + "',LANDMARK='" + R_LANDMARK.Text + "',AREA='" + R_AREA.Text + "' where id='" + empId + "'");
 
                 ScriptManager.RegisterStartupScript(this, this.GetType(), "alert", "alert('Update Successfully, .');window.location ='EmployeeMaster.aspx';", true);
 
@@ -164,7 +165,7 @@ namespace TaskManager.tm_admin
                 }
                 else
                 {
-                    D.ExecuteQuery("insert into employee_master (EMAIL,FIRST_NAME,LAST_NAME,DOB,MOBILE_NUMBER,ADDRESS,LANDMARK,AREA,PASSWORD,STATUS) values('" + EMAIL.Text + "','" + FIRST_NAME.Text + "','" + LAST_NAME.Text + "','" + DOB.Text + "','" + MOBILE_NUMBER.Text + "','" + RES_ADDRESS.Text + "','" + R_LANDMARK.Text + "','" + R_AREA.Text + "','patkar12345','" + Convert.ToBoolean(chkStatus.Checked) + "')");
+                    D.ExecuteQuery("insert into employee_master (EMAIL,FIRST_NAME,LAST_NAME,DOB,MOBILE_NUMBER,ADDRESS,LANDMARK,AREA,PASSWORD,STATUS,PINCODE) values('" + EMAIL.Text + "','" + FIRST_NAME.Text + "','" + LAST_NAME.Text + "','" + DOB.Text + "','" + MOBILE_NUMBER.Text + "','" + RES_ADDRESS.Text + "','" + R_LANDMARK.Text + "','" + R_AREA.Text + "','patkar12345','" + Convert.ToBoolean(chkStatus.Checked) + "','" + txtPinCode.Text + "')");
 
                     divSuccess.Visible = true;
                     divError.Visible = false;
@@ -210,6 +211,7 @@ namespace TaskManager.tm_admin
             //PASSPORT_NO.Text = "";
             MOBILE_NUMBER.Text = "";
             ALT_MOBILE_NUMBER.Text = "";
+            txtPinCode.Text = "";
             //REF_ONE_NAME.Text = "";
             //REF_ONE_MOBILE.Text = "";
             //REF_ONE_COMP.Text = "";

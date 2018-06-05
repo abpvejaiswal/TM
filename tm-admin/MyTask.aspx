@@ -196,7 +196,7 @@
                                 <option value="0" disabled="disabled">---------------------------------</option>
                                 <option value="In Progress">In Progress Task</option>
                                 <option value="Not Started">Not Started Task</option>
-                                <option value="yesterdaycomletetask">Yesterday Complete Task</option>
+                                <option value="yesterdaycomletetask">Yesterday Completed Task</option>
                             </select>
                         </div>
                         <div id="filterbydate">
@@ -244,7 +244,9 @@
                                     <th>Contact Person</th>
                                     <th>Client Number</th>
                                     <th>Email ID</th>
-                                    <th>Client Group</th>                                    
+                                    <th>Client Group</th>
+                                    <th>Nature Of Work</th>                                    
+                                    <th>Work Recieved On</th>
                                     <th>Due Date</th>
                                     <th>Closed Date</th>
                                     <th>Status</th>
@@ -269,7 +271,9 @@
                                     <td ng-bind="x.CONTACT_PERSON"></td>
                                     <td ng-bind="x.CONTACT_NUMBER"></td>                        
                                     <td ng-bind="x.CONTACT_EMAIL_ID"></td>
-                                    <td ng-bind="x.CLIENT_GROUP"></td>                                    
+                                    <td ng-bind="x.CLIENT_GROUP"></td>      
+                                    <td ng-bind="x.NATURE_OF_WORK"></td>                              
+                                    <td ng-bind="x.START_DATE"></td>
                                     <td ng-bind="x.DUE_DATE"></td>
                                     <td ng-bind="x.CLOSED_DATE"></td>
                                     <td ng-bind="x.STATUS"></td>

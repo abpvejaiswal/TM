@@ -137,7 +137,7 @@
                             <div role="tabpanel" class="tab-pane active" id="productinfo">
                                 <br />
                                 <div class="row">
-                                    <div class="col-sm-3">
+                                    <div class="col-sm-3" style="display:none;">
                                         <div class="form-group fg-float" style="display:none;">
                                             <div class="fg-line ">
                                                 <asp:TextBox runat="server" ValidationGroup="reg" ID="txtEmployeeId" TextMode="Email" CssClass="form-control">
@@ -146,18 +146,6 @@
                                             </div>
                                             <label class="fg-label">Employee Id</label>
                                         </div>
-
-                                        <div class="form-group fg-float">
-                                            <div class="fg-line">
-                                                <asp:TextBox runat="server" ValidationGroup="reg" ID="EMAIL" TextMode="Email" CssClass="form-control"></asp:TextBox>
-                                                <asp:RegularExpressionValidator ValidationGroup="reg" ID="regexEmailValid" Display="Dynamic" ClientIDMode="Inherit" runat="server" ForeColor="Red" ValidationExpression="\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*" ControlToValidate="EMAIL" ErrorMessage="Invalid Email Format"></asp:RegularExpressionValidator>
-                                                <asp:RequiredFieldValidator ValidationGroup="reg" runat="server" ID="reqName" ControlToValidate="EMAIL" Display="Dynamic" ClientIDMode="Inherit" ForeColor="Red" ErrorMessage="Please Enter Email Address !" />
-
-                                            </div>
-                                            <label class="fg-label">Email Address</label>
-                                        </div>
-
-                                        <%--<asp:RequiredFieldValidator runat="server" ID="reqName" ControlToValidate="EMAIL" ForeColor="Red" ErrorMessage="Please enter your Email!" />--%>
                                     </div>
 
                                     <div class="col-sm-3">
@@ -208,6 +196,20 @@
                                             <label class="fg-label">Mobile Number</label>
                                         </div>
                                     </div>
+                                    <div class="col-sm-3">
+                                        
+                                        <div class="form-group fg-float">
+                                            <div class="fg-line">
+                                                <asp:TextBox runat="server" ValidationGroup="reg" ID="EMAIL" TextMode="Email" CssClass="form-control"></asp:TextBox>
+                                                <asp:RegularExpressionValidator ValidationGroup="reg" ID="regexEmailValid" Display="Dynamic" ClientIDMode="Inherit" runat="server" ForeColor="Red" ValidationExpression="\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*" ControlToValidate="EMAIL" ErrorMessage="Invalid Email Format"></asp:RegularExpressionValidator>
+                                                <asp:RequiredFieldValidator ValidationGroup="reg" runat="server" ID="reqName" ControlToValidate="EMAIL" Display="Dynamic" ClientIDMode="Inherit" ForeColor="Red" ErrorMessage="Please Enter Email Address !" />
+
+                                            </div>
+                                            <label class="fg-label">Email Address</label>
+                                        </div>
+
+                                        <%--<asp:RequiredFieldValidator runat="server" ID="reqName" ControlToValidate="EMAIL" ForeColor="Red" ErrorMessage="Please enter your Email!" />--%>
+                                    </div>
                                     <div class="col-sm-3" style="display:none;" >
                                         <div class="form-group fg-float">
                                             <div class="fg-line">
@@ -241,10 +243,18 @@
                                             <div class="fg-line">
                                                 <asp:TextBox runat="server" ValidationGroup="reg" ID="R_AREA" CssClass="form-control"></asp:TextBox>
                                             </div>
-                                            <label class="fg-label">Area</label>
+                                            <label class="fg-label">City</label>
                                         </div>
                                     </div>
                                     
+                                    <div class="col-sm-3" >
+                                        <div class="form-group fg-float">
+                                            <div class="fg-line">
+                                                <asp:TextBox runat="server" ValidationGroup="reg" ID="txtPinCode" CssClass="form-control"></asp:TextBox>
+                                            </div>
+                                            <label class="fg-label">Pin Code</label>
+                                        </div>
+                                    </div>
 
                                     <div class="col-sm-3" style="display:none;" >
                                         <div class="form-group fg-float">

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
+using System.Globalization;
 using System.Linq;
 using System.Web;
 using System.Web.Script.Serialization;
@@ -49,8 +50,17 @@ namespace TaskManager
             JavaScriptSerializer js = new JavaScriptSerializer();
             try
             {
-                
+                //DateTime sdfsdf = Convert.ToDateTime(DUE_DATE);
 
+                //DateTime ddd = DateTime.ParseExact(DUE_DATE,"yyyy-MM-dd",null);
+
+                //DUE_DATE = String.Format("{0:y yy yyy yyyy}", Convert.ToDateTime(DUE_DATE));  // "8 08 008 2008"   year
+
+                //IFormatProvider culture = new CultureInfo("en-US", true);
+                //DateTime duedt = new DateTime();
+                //DateTime.TryParse(DUE_DATE, out duedt);
+                
+                //DUE_DATE = dateDue.ToString();
                 if (type == "add_task")
                 {
                     //string FINANCIAL_YEAR = "";
@@ -154,7 +164,7 @@ namespace TaskManager
                     cmd.Parameters.AddWithValue("@ASSIGN_TO", ASSIGN_TO);
                     cmd.Parameters.AddWithValue("@TASK_OWNER", emp_id);
                     cmd.Parameters.AddWithValue("@START_DATE", START_DATE);
-                    cmd.Parameters.AddWithValue("@DUE_DATE", DUE_DATE);
+                    cmd.Parameters.AddWithValue("@DUE_DATE", DUE_DATE.ToString());
                     cmd.Parameters.AddWithValue("@SUBJECT", SUBJECT);
                     cmd.Parameters.AddWithValue("@STATUS", STATUS);
                     cmd.Parameters.AddWithValue("@PRIORITY", PRIORITY);
@@ -934,11 +944,12 @@ namespace TaskManager
                             data.REPEAT_TYPE = row["REPEAT_TYPE"].ToString();
                             data.STATUS = row["STATUS"].ToString();
                             data.PRIORITY = row["PRIORITY"].ToString();
-                            data.DUE_DATE = Convert.ToDateTime(row["DUE_DATE"].ToString()).ToString("yyyy-MM-dd");
+                            data.DUE_DATE = Convert.ToDateTime(row["DUE_DATE"].ToString()).ToString("dd-MM-yyyy");
+                            data.START_DATE = Convert.ToDateTime(row["START_DATE"].ToString()).ToString("dd-MM-yyyy");
                             data.STATUS = row["STATUS"].ToString();
                             data.CREATED = row["CREATED"].ToString();
                             if (row["CLOSED_DATE"].ToString() != "")
-                                data.CLOSED_DATE = Convert.ToDateTime(row["CLOSED_DATE"].ToString()).ToString("yyyy-MM-dd");
+                                data.CLOSED_DATE = Convert.ToDateTime(row["CLOSED_DATE"].ToString()).ToString("dd-MM-yyyy");
                             else
                                 data.CLOSED_DATE = "pending";
 
@@ -1169,9 +1180,10 @@ namespace TaskManager
                             data.REPEAT_TYPE = row["REPEAT_TYPE"].ToString();
                             data.STATUS = row["STATUS"].ToString();
                             data.PRIORITY = row["PRIORITY"].ToString();
-                            data.DUE_DATE = Convert.ToDateTime(row["DUE_DATE"].ToString()).ToString("yyyy-MM-dd");
+                            data.DUE_DATE = Convert.ToDateTime(row["DUE_DATE"].ToString()).ToString("dd-MM-yyyy");
                             data.STATUS = row["STATUS"].ToString();
                             data.CREATED = row["CREATED"].ToString();
+                            data.START_DATE = Convert.ToDateTime(row["START_DATE"].ToString()).ToString("dd-MM-yyyy");
                             data.CLOSED_DATE = row["CLOSED_DATE"].ToString();
                             data.IS_CLOSED = row["IS_CLOSED"].ToString();
                             data.NOTES = row["NOTES"].ToString();

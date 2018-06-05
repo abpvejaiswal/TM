@@ -70,7 +70,7 @@
                             <a href="#" class="notifications btn btn-success" data-custommessage="" style="visibility: hidden;" data-type="success">Success</a>
                             <span class="pull-right">
 
-                                <asp:Button runat="server" ID="btnsubmit" ValidationGroup="lead" Text="Update" OnClick="lbSubmit_Click" CssClass="btn-success btn-sm m-t-10" />
+                                <asp:Button runat="server" ID="btnsubmit" ValidationGroup="lead" Text="Update" OnClick="lbSubmit_Click" CssClass="custom-submit-btn btn-primary btn-sm m-t-10" />
                                 <%--<asp:Button runat="server" ID="btnupdate" ValidationGroup="state" Visible="false" OnClick="lbUpdate_Click" Text="Update" CssClass="btn-success btn-sm m-t-10" />--%>
                                 
                             </span>

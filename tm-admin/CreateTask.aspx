@@ -130,7 +130,7 @@
                                     <div class="col-sm-3">
                                         <div class="form-group m-b-10">
                                             <div class="fg-line ">
-                                                <label class="fg-label">Contact Person<span style="color: red;"> </span></label>
+                                                <label class="fg-label">Contact Person<span style="color: red;">*</span></label>
                                                 <asp:DropDownList runat="server" ID="ddlContactPerson" CssClass="form-control CONTACT_PERSON" OnSelectedIndexChanged="ddlContactPerson_SelectedIndexChanged" ng-change="ChangeContactPerson()" ng-model="ADD_TASK.CONTACT_PERSON" AutoPostBack="false" data-placeholder="Please select an client group" data-live-search="true">
                                                 </asp:DropDownList>
                                             </div>
@@ -140,10 +140,9 @@
                                     <div class="col-sm-2">
                                         <div class="form-group fg-float">
                                             <div class="fg-line myfg">
-                                                <asp:TextBox runat="server" ID="txtCONTACT_NUMBER" CssClass="form-control " ng-model="ADD_TASK.CONTACT_NUMBER"></asp:TextBox>
-                                                <%--<input type="text" class="form-control " ng-model="ADD_TASK.CONTACT_NUMBER" />--%>
+                                                <asp:TextBox runat="server" ID="txtCONTACT_NUMBER" CssClass="form-control" ng-model="ADD_TASK.CONTACT_NUMBER"></asp:TextBox>                                                
                                             </div>
-                                            <label class="fg-label">Contact Number</label>
+                                            <label class="fg-label">Contact Number<span style="color: red;">*</span></label>
                                         </div>
                                     </div>
 
@@ -153,7 +152,7 @@
                                                 <asp:TextBox runat="server" ID="txtCONTACT_EMAIL_ID" CssClass="form-control " ng-model="ADD_TASK.CONTACT_EMAIL_ID"></asp:TextBox>
                                                 <%--<input type="text" class="form-control " ng-model="ADD_TASK.CONTACT_EMAIL_ID" />--%>
                                             </div>
-                                            <label class="fg-label">Email ID</label>
+                                            <label class="fg-label">Email ID<span style="color: red;">*</span></label>
                                         </div>
                                     </div>
                                 </ContentTemplate>
@@ -161,11 +160,9 @@
                             <div class="col-sm-3">
                                 <div class="form-group m-b-10">
                                     <div class="fg-line ">
-                                        <label class="fg-label">Select Financial Year<span style="color: red;"> </span></label>
+                                        <label class="fg-label">Select Financial Year/Month<span style="color: red;"> </span></label>
                                         <asp:DropDownList runat="server" ClientIDMode="Static" ID="ddlYear" CssClass="form-control FINANCIAL_YEAR" ng-change="ChangeYear(ADD_TASK.FINANCIAL_YEAR)" ng-model="ADD_TASK.FINANCIAL_YEAR" data-placeholder="Please select an year" data-live-search="true">
                                         </asp:DropDownList>
-                                        <%--<asp:DropDownList runat="server" ClientIDMode="Static" ID="ddlYear" CssClass="selectpicker FINANCIAL_YEAR" data-placeholder="Please select an Financial Year" data-live-search="true">
-                                        </asp:DropDownList>--%>
                                     </div>
                                 </div>
                             </div>
@@ -175,7 +172,7 @@
                                     <div class="fg-line fg-toggled">
                                         <input type="text" class="form-control ASSESSMENT_YEAR" ng-model="ADD_TASK.ASSESSMENT_YEAR" />
                                     </div>
-                                    <label class="fg-label">Assessment Year</label>
+                                    <label class="fg-label">Assessment Year/Month</label>
                                 </div>
                             </div>
                             <div class="clearfix">&nbsp;</div>
@@ -236,6 +233,7 @@
                                         <label class="fg-label">Priority</label>
                                         <select name="Status" ng-model="ADD_TASK.PRIORITY" class="form-control">
                                             <option>High</option>
+                                            <option>Medium</option>
                                             <option>Low</option>
                                         </select>
 

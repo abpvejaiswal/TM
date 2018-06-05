@@ -86,7 +86,7 @@ namespace TaskManager.tm_admin
                 ddlYear.DataTextField = "FINANCIAL_YEAR";
                 ddlYear.DataBind();
             }
-            ddlYear.Items.Insert(0, new ListItem("Select Financial Year", "0"));
+            ddlYear.Items.Insert(0, new ListItem("Select Financial Year/Month", "0"));
         }
 
         protected void ddlContactPerson_SelectedIndexChanged(object sender, EventArgs e)

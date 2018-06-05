@@ -40,33 +40,6 @@ namespace TaskManager.tm_admin {
         protected global::System.Web.UI.WebControls.TextBox txtEmployeeId;
         
         /// <summary>
-        /// EMAIL control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox EMAIL;
-        
-        /// <summary>
-        /// regexEmailValid control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RegularExpressionValidator regexEmailValid;
-        
-        /// <summary>
-        /// reqName control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator reqName;
-        
-        /// <summary>
         /// FIRST_NAME control.
         /// </summary>
         /// <remarks>
@@ -139,6 +112,33 @@ namespace TaskManager.tm_admin {
         protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidator2;
         
         /// <summary>
+        /// EMAIL control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox EMAIL;
+        
+        /// <summary>
+        /// regexEmailValid control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator regexEmailValid;
+        
+        /// <summary>
+        /// reqName control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator reqName;
+        
+        /// <summary>
         /// ALT_MOBILE_NUMBER control.
         /// </summary>
         /// <remarks>
@@ -182,6 +182,15 @@ namespace TaskManager.tm_admin {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox R_AREA;
+        
+        /// <summary>
+        /// txtPinCode control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtPinCode;
         
         /// <summary>
         /// BLOOD_GROUP control.

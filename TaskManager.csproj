@@ -92,6 +92,7 @@
     <Content Include="tm-admin\fonts\weather-icons\weather-icons.ttf" />
     <Content Include="tm-admin\fonts\weather-icons\weather-icons.woff" />
     <Content Include="tm-admin\fonts\weather-icons\weather-iconsd41d.eot" />
+    <Content Include="tm-admin\img\logo\Don%27t Delay.jpg" />
     <Content Include="tm-admin\img\logo\favicon.png" />
     <Content Include="tm-admin\img\logo\logo.jpg" />
     <Content Include="tm-admin\img\logo\logo.png" />

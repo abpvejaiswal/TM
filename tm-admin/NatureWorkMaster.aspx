@@ -36,8 +36,8 @@
 
 
                                 <br />
-                                <asp:Button runat="server" ID="btnsubmit"  ValidationGroup="Branch" Text="Submit" OnClick="lbSubmit_Click" CssClass="btn-success btn-sm m-t-10" />
-                                <asp:Button runat="server" ID="btnupdate" ValidationGroup="Branch" Visible="false" OnClick="lbUpdate_Click" Text="Update" CssClass="btn-success btn-sm m-t-10" />
+                                <asp:Button runat="server" ID="btnsubmit"  ValidationGroup="Branch" Text="Submit" OnClick="lbSubmit_Click" CssClass="custom-submit-btn btn-primary btn-sm m-t-10" />
+                                <asp:Button runat="server" ID="btnupdate" ValidationGroup="Branch" Visible="false" OnClick="lbUpdate_Click" Text="Update" CssClass="custom-submit-btn btn-primary btn-sm m-t-10" />
                                 <%--<button type="submit" onclick="" class="btn btn-success btn-sm m-t-10">Submit</button>--%>
                                 <%-- </form>--%>
                             </div>
